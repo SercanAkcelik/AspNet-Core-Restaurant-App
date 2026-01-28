@@ -1,3 +1,19 @@
+/*
+ * -----------------------------------------------------------------------------
+ * PROJE: LezzetBurger - Restoran Yönetim Sistemi
+ * DOSYA: Areas/Admin/Controllers/ProductsController.cs
+ * 
+ * AÇIKLAMA:
+ * Bu Controller, Admin panelindeki Ürün Yönetimi işlemlerini gerçekleştirir.
+ * Temel CRUD (Ekle, Oku, Güncelle, Sil) operasyonlarını içerir.
+ * Özellikler:
+ * - Asenkron (async/await) veritabanı işlemleri.
+ * - Dosya yükleme (File Upload) ile ürün görseli ekleme.
+ * - Entity Framework Core ile ilişkili veri (Category) çekme.
+ * - [ValidateAntiForgeryToken] ile güvenlik koruması.
+ * -----------------------------------------------------------------------------
+ */
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -105,12 +121,6 @@ namespace HamburgerSite.Areas.Admin.Controllers
                         }
                         product.ImageUrl = "/img/products/" + fileName;
                     }
-                    // If no new file is uploaded, keep the old ImageUrl (Hidden field in view handles this, or we need to fetch old entity. 
-                    // MVC Binding might overwrite pure properties if not careful, but string? is fine if form sends it)
-                    // Wait, if form disables ImageUrl input, we need to preserve logic. 
-                    // Better approach: EF Core Attach or Fetch & Map.
-                    // For now, let's assume the hidden input sends the old URL if not changed? 
-                    // No, the safest is to fetch original if imageFile is null.
                     
                     if(imageFile == null) {
                          var oldProduct = await _context.Products.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);

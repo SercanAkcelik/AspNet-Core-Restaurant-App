@@ -1,3 +1,15 @@
+/*
+ * -----------------------------------------------------------------------------
+ * PROJE: LezzetBurger - Restoran Yönetim Sistemi
+ * DOSYA: Data/AppDbContext.cs
+ * 
+ * AÇIKLAMA:
+ * Bu sınıf, uygulamanın Veritabanı Bağlamını (Database Context) temsil eder.
+ * Entity Framework Core kullanılarak Code-First yaklaşımıyla tasarlanmıştır.
+ * Veritabanı tabloları (DbSet) ve ilişkileri burada tanımlanır.
+ * -----------------------------------------------------------------------------
+ */
+
 using Microsoft.EntityFrameworkCore;
 using HamburgerSite.Models;
 

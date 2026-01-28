@@ -1,54 +1,54 @@
-# 🍔 Restaurant Management System (Showcase)
+# 🍔 LezzetBurger - Restoran Yönetim Sistemi (Showcase)
 
-**A modern, full-stack ASP.NET Core MVC solution for restaurant management, digital menu presentation, and reservation handling.**
+**Restoran yönetimi, dijital menü sunumu ve rezervasyon işlemleri için geliştirilmiş modern, full-stack ASP.NET Core MVC çözümü.**
 
-> **Note:** This repository is a **Showcase** to demonstrate architecture, coding standards, and project structure. The full source code is private to protect intellectual property.
-
----
-
-## 🚀 Project Overview
-
-This project is a comprehensive web application designed to digitize restaurant operations. It features a public-facing intuitive menu and reservation system, backed by a powerful Admin Panel for real-time management of products, categories, and bookings.
-
-### 🌟 Key Features
-
-*   **Public Interface:**
-    *   Dynamic Menu showcase with filtering.
-    *   Online Table Reservation system.
-    *   Responsive, modern UI/UX design.
-*   **Admin Panel (CMS):**
-    *   Secure Authentication & Authorization.
-    *   **Dashboard:** Real-time metrics and overview.
-    *   **Menu Management:** CRUD operations for Categories and Products.
-    *   **Reservation Management:** View, approve, or cancel bookings.
-*   **Architecture:**
-    *   Layered Architecture (MVC).
-    *   Entity Framework Core (Code-First).
-    *   Dependency Injection & Repository Pattern principles.
+> **Not:** Bu repo, projenin mimarisini, kodlama standartlarını ve yapısal kalitesini sergilemek amacıyla oluşturulmuş bir **Showcase (Vitrin)** çalışmasıdır. Fikri mülkiyet haklarını korumak adına tüm kaynak kodları paylaşılmamış, sadece projenin teknik yetkinliğini gösteren temel dosyalar eklenmiştir.
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Proje Hakkında
+
+Bu proje, restoran operasyonlarını dijitale taşıyan kapsamlı bir web uygulamasıdır. Müşteriler için şık ve kullanışlı bir menü ve rezervasyon arayüzü sunarken, işletme sahipleri için güçlü bir Yönetim Paneli sağlar.
+
+### 🌟 Öne Çıkan Özellikler
+
+*   **Müşteri Arayüzü (Public UI):**
+    *   Kategori bazlı filtreleme özelliğine sahip Dinamik Dijital Menü.
+    *   Hızlı ve kolay Online Masa Rezervasyonu.
+    *   Mobil uyumlu, modern ve estetik tasarım.
+*   **Yönetim Paneli (Admin & CMS):**
+    *   Güvenli Kimlik Doğrulama (Authentication) ve Yetkilendirme.
+    *   **Dashboard:** Anlık metrikler ve işletme özeti.
+    *   **Menü Yönetimi:** Ürün ve Kategori ekleme, düzenleme, silme (CRUD).
+    *   **Rezervasyon Yönetimi:** Gelen rezervasyonları görüntüleme ve onaylama.
+*   **Mimari ve Teknik:**
+    *   Katmanlı Mimari (N-Tier Architecture) yaklaşımı.
+    *   Entity Framework Core ile Code-First veritabanı tasarımı.
+    *   Dependency Injection ve Repository Pattern prensipleri.
+
+---
+
+## 🛠 Kullanılan Teknolojiler
 
 *   **Backend:** ASP.NET Core MVC (.NET 6/7)
-*   **Database:** MS SQL Server, Entity Framework Core
-*   **Frontend:** HTML5, CSS3, JavaScript, Bootstrap/Tailwind (Showcase specific)
-*   **Tools:** Visual Studio, Git, SSMS
+*   **Veritabanı:** MS SQL Server, Entity Framework Core
+*   **Frontend:** HTML5, CSS3, JavaScript, Bootstrap/Tailwind
+*   **Araçlar:** Visual Studio, Git, SSMS
 
 ---
 
-## 📂 Project Structure (Sneak Peek)
+## 📂 Örnek Kod İncelemesi
 
-This showcase includes selected core files to demonstrate the coding style and architectural decisions:
+Bu repoda projenin kalitesini yansıtan şu dosyalar bulunmaktadır:
 
-*   `Program.cs`: Application configuration, DI container setup, and Middleware pipeline.
-*   `Data/AppDbContext.cs`: Database context and Entity configurations.
-*   `Areas/Admin/Controllers/ProductsController.cs`: Example of robust Controller logic with EF Core.
-*   `Models/Product.cs`: Domain entity example.
+*   **`Program.cs`:** Uygulamanın giriş noktası. Servislerin (DI Container) ayarlandığı, veritabanı bağlantısının ve Middleware hattının konfigüre edildiği merkez.
+*   **`Data/AppDbContext.cs`:** Veritabanı bağlamı (Context). Tabloların (DbSet) ve ilişkilerin tanımlandığı EF Core yapılandırması.
+*   **`Areas/Admin/Controllers/ProductsController.cs`:** Admin panelinde ürün yönetimini sağlayan Controller. Asenkron programlama, dosya yükleme işlemleri ve hata yönetimi örnekleri içerir.
+*   **`Models/Product.cs`:** Veritabanı varlık (Entity) modeli örneği. Data Annotations ile yapılan validasyon kurallarını gösterir.
 
 ---
 
-## 👨‍💻 Developer Info
+## 👨‍💻 Geliştirici
 
-Developed with ❤️ by **[Sercan Akçelik](https://linkedin.com/in/sercanakcelik)**.
-*Focusing on building scalable, clean, and efficient web solutions.*
+**[Sercan Akçelik](https://linkedin.com/in/sercanakcelik)** tarafından geliştirilmiştir.
+*Ölçeklenebilir, temiz ve verimli web çözümleri üzerine çalışıyorum.*

@@ -1,3 +1,18 @@
+/*
+ * -----------------------------------------------------------------------------
+ * PROJE: LezzetBurger - Restoran Yönetim Sistemi
+ * DOSYA: Program.cs
+ * 
+ * AÇIKLAMA:
+ * Bu dosya uygulamanın teknik omurgasıdır ve başlangıç noktasıdır.
+ * Şunları içerir:
+ * 1. Dependency Injection (DI) Konteynerinin yapılandırılması.
+ * 2. Entity Framework Core ile SQL Server veritabanı bağlantısı.
+ * 3. Cookie tabanlı Kimlik Doğrulama (Authentication) ayarları.
+ * 4. HTTP İstek Hattı (Middleware Pipeline) konfigürasyonu (Routing, Static Files, Auth vb.).
+ * -----------------------------------------------------------------------------
+ */
+
 using Microsoft.EntityFrameworkCore;
 using HamburgerSite.Data;
 
